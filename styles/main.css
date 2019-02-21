@@ -9,8 +9,8 @@ body {
 
 @font-face {
   font-family: 'SF Compact Display';
-  src: url('SFCompactDisplay-Light.woff2') format('woff2'),
-    url('SFCompactDisplay-Light.woff') format('woff');
+  src: url('../fonts/SFCompactDisplay-Light.woff2') format('woff2'),
+    url('../fonts/SFCompactDisplay-Light.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
