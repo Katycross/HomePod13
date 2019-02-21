@@ -611,26 +611,26 @@ ul.menu_responsive {
 
 
 
-/* CONNECTIVITÉ */
+/* Connectivite */
 
 /* SECTION 1 */
 
-.Connectivité__section1 {
+.Connectivite__section1 {
   display: flex;
   flex-direction: column;
 }
 
-.Connectivité__block1__visual {
+.Connectivite__block1__visual {
   width: 100%;
   height: 100%;
 }
 
-.Connectivité__section1__visual {
+.Connectivite__section1__visual {
   height: 150vh;
   background: url('../images/Connectivité/connect2.jpg') center top / cover no-repeat;
 }
 
-.Connectivité__section1__content {
+.Connectivite__section1__content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -638,19 +638,19 @@ ul.menu_responsive {
   padding-bottom: 4rem;
 }
 
-.Connectivité__section1__content__description {
+.Connectivite__section1__content__description {
   font-size: 4.5rem;
   display: block;
   justify-content: center;
 }
 
-.Connectivité__section1__content__description__link {
+.Connectivite__section1__content__description__link {
   color: #008EE6;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.Connectivité__section1__content__subdescription {
+.Connectivite__section1__content__subdescription {
   font-size: 1.5rem;
 }
 
@@ -695,21 +695,21 @@ ul.menu_responsive {
 
 /* SECTION 2 */
 
-.Connectivité__section2 {
+.Connectivite__section2 {
   display: flex;
   justify-content: center;
   height: 50rem;
 }
 
-.Connectivité__block2__visual {
+.Connectivite__block2__visual {
   width: 30%;
 }
 
-.Connectivité__section2__visual {
+.Connectivite__section2__visual {
   background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
 }
 
-.Connectivité__section2__content {
+.Connectivite__section2__content {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -717,19 +717,19 @@ ul.menu_responsive {
   padding: 7rem;
 }
 
-.Connectivité__section2__content__description {
+.Connectivite__section2__content__description {
   font-size: 3rem;
   display: block;
   justify-content: center;
 }
 
-.Connectivité__section2__content__description__link {
+.Connectivite__section2__content__description__link {
   color: #008EE6;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.Connectivité__section2__content__subdescription {
+.Connectivite__section2__content__subdescription {
   font-size: 1.2rem;
 }
 
@@ -745,21 +745,21 @@ ul.menu_responsive {
 
 /* SECTION 3 */
 
-.Connectivité__section2 {
+.Connectivite__section2 {
   display: flex;
   justify-content: center;
   height: 50rem;
 }
 
-.Connectivité__block2__visual {
+.Connectivite__block2__visual {
   width: 30%;
 }
 
-.Connectivité__section2__visual {
+.Connectivite__section2__visual {
   background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
 }
 
-.Connectivité__section2__content {
+.Connectivite__section2__content {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -767,19 +767,19 @@ ul.menu_responsive {
   padding: 7rem;
 }
 
-.Connectivité__section2__content__description {
+.Connectivite__section2__content__description {
   font-size: 3rem;
   display: block;
   justify-content: center;
 }
 
-.Connectivité__section2__content__description__link {
+.Connectivite__section2__content__description__link {
   color: #008EE6;
   text-decoration: none;
   font-size: 1rem;
 }
 
-.Connectivité__section2__content__subdescription {
+.Connectivite__section2__content__subdescription {
   font-size: 1.2rem;
 }
 

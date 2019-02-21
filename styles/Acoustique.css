@@ -20,176 +20,176 @@ body {
 
 
 nav.HEADER {
-    display: flex;
-    justify-content: space-around;
-    height: auto;
-    background: #23222A;
-    font-size: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  background: #23222A;
+  font-size: 0.9rem;
+}
+
+.menu_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu_container ul li{
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  margin: 0rem 1.8rem;
+}
+
+.menu_container ul li a {
+  display: inline;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.menu_container ul li a:hover {
+  color: #969696;
+}
+
+.apple_icon a img {
+  max-width: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+ul.menu_responsive {
+  display: none;
+}
+
+#menuToggle {
+  display: none;
+}
+
+
+.Acheter {
+  background-color: #1592E6;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #07c;
+  padding: 0.15rem 0.8rem 0.15rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
   }
-  
-  .menu_container ul {
-    list-style: none;
-    padding: 0;
+
+  .menu_container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
   }
-  
-  .menu_container ul li{
-    display: inline-block;
-    text-align: center;
-    width: auto;
-    margin: 0rem 1.8rem;
-  }
-  
-  .menu_container ul li a {
-    display: inline;
-    color: #fff;
-    font-size: 0.8rem;
-    text-decoration: none;
-  }
-  
-  .menu_container ul li a:hover {
-    color: #969696;
-  }
-  
-  .apple_icon a img {
-    max-width: 0.8rem;
-    margin-right: 0.2rem;
-  }
-  
+
   ul.menu_responsive {
-    display: none;
+    display: flex;
+    justify-content: space-between;
   }
-  
-  #menuToggle {
-    display: none;
+
+
+  ul.menu_responsive li a {
+    font-size: 1.5rem;
   }
-  
-  
-  .Acheter {
-    background-color: #1592E6;
-    background: linear-gradient(#42a1ec, #0070c9);
-    border: 1px solid #07c;
-    padding: 0.15rem 0.8rem 0.15rem 0.8rem;
-    border-radius: 0.2rem;
+
+  a {
+    transition: color 0.3s ease;
   }
-  
-  
-  
-  
-  @media (max-width: 900px) {
-    .menu {
-      display: none;
-    }
-  
-    .menu_container {
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      width: 100%;
-    }
-  
-    ul.menu_responsive {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-  
-    ul.menu_responsive li a {
-      font-size: 1.5rem;
-    }
-  
-    a {
-      transition: color 0.3s ease;
-    }
-  
-    #menuToggle input {
-      display: block;
-      width: 2rem;
-      height: 1rem;
-      position: absolute;
-      cursor: pointer;
-      opacity: 0;
-      z-index: 2;
-    }
-  
-    #menuToggle span {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: #cdcdcd;
-      border-radius: 3px;
-      z-index: 1;
-      transform-origin: 4px 0px;
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+  #menuToggle input {
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       opacity 0.55s ease;
-    }
-  
-    #menuToggle span:first-child {
-      transform-origin: 0% 0%;
-    }
-  
-    #menuToggle span:nth-last-child(2) {
-      transform-origin: 0% 100%;
-    }
-  
-    #menuToggle input:checked~span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-    }
-  
-    #menuToggle input:checked~span:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-  
-    #menuToggle input:checked~span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-  
-    #menu {
-      position: absolute;
-      width: 30%;
-      margin: 15px 0 0 -50px;
-      padding: 18px 50px 50px;
-      background: rgba(0, 0, 0, 0.8);
-      list-style-type: none;
-      transform-origin: 0% 0%;
-      transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    }
-  
-    #menu li {
-      padding: 10px 0;
-    }
-  
-    #menuToggle input:checked~ul {
-      transform: none;
-    }
-  
-    #menuToggle {
-      margin-top: 7px;
-      display: block;
-      top: 50px;
-      left: 50px;
-      z-index: 1;
-      user-select: none;
-    }
-  
-    ul#menu li {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .menu_container ul li {
-      margin: 0;
-    }
-  
-    .menu_container ul li:first-child {
-      margin-left: 0;
-    }
   }
-  
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 30%;
+    margin: 15px 0 0 -50px;
+    padding: 18px 50px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+  }
+
+  #menuToggle input:checked~ul {
+    transform: none;
+  }
+
+  #menuToggle {
+    margin-top: 7px;
+    display: block;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    user-select: none;
+  }
+
+  ul#menu li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_container ul li {
+    margin: 0;
+  }
+
+  .menu_container ul li:first-child {
+    margin-left: 0;
+  }
+}
+
   
 
   /* GENERAL STYLE ALL PAGE */
@@ -533,4 +533,3 @@ nav.HEADER {
 
 }
 
-}

@@ -201,26 +201,26 @@ nav.HEADER {
 }
 
 
-/* CONNECTIVITÉ */
+/* Connectivite */
 
 /* SECTION 1 */
 
-.Connectivité__section1__content {
+.Connectivite__section1__content {
     display: flex;
     flex-direction: column;
 }
 
-.Connectivité__block1__visual {
+.Connectivite__block1__visual {
     width: 100%;
     height: 100%;
 }
 
-.Connectivité__section1__visual {
+.Connectivite__section1__visual {
     height: 120vh;
-    background: url('../images/Connectivité/connect2.jpg') center top / cover no-repeat;
+    background: url('../images/Connectivite/connect2.jpg') center top / cover no-repeat;
 }
 
-.Connectivité__section1__content__description {
+.Connectivite__section1__content__description {
     font-size: 4rem;
     display: flex;
     padding-top: 5rem;
@@ -228,13 +228,13 @@ nav.HEADER {
     justify-content: center;
 }
 
-.Connectivité__section1__content__description__link {
+.Connectivite__section1__content__description__link {
     color: #008EE6;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.Connectivité__section1__content__subdescription {
+.Connectivite__section1__content__subdescription {
     font-size: 1.5rem;
 }
 
@@ -291,21 +291,21 @@ nav.HEADER {
 
 /* SECTION 2 CONFIGURATION */
 
-.Connectivité__section2 {
+.Connectivite__section2 {
     display: flex;
     justify-content: center;
     height: 85vh;
 }
 
-.Connectivité__block2__visual {
+.Connectivite__block2__visual {
     width: 30%;
 }
 
-.Connectivité__section2__visual {
+.Connectivite__section2__visual {
     background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
 }
 
-.Connectivité__section2__content {
+.Connectivite__section2__content {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -313,14 +313,14 @@ nav.HEADER {
     padding: 7rem;
 }
 
-.Connectivité__section2__content__description {
+.Connectivite__section2__content__description {
     font-size: 3rem;
     display: block;
     justify-content: center;
 }
 
 
-.Connectivité__section2__content__subdescription {
+.Connectivite__section2__content__subdescription {
     font-size: 1.5rem;
 }
 
@@ -377,11 +377,11 @@ nav.HEADER {
 @media (max-width: 900px) {
 
     /* Section 1 */
-    .Connectivité__section1__visual {
+    .Connectivite__section1__visual {
         height: 100vh;
     }
 
-    .Connectivité__section1__content__description {
+    .Connectivite__section1__content__description {
         font-size: 3.5rem;
     }
 
@@ -412,16 +412,16 @@ nav.HEADER {
 
     /* SECTION 3 Configuration */
 
-    .Connectivité__section2 {
+    .Connectivite__section2 {
         height: auto;
     }
     
-    .Connectivité__section2__content__description {
+    .Connectivite__section2__content__description {
         font-size: 2rem;
     }
     
     
-    .Connectivité__section2__content__subdescription {
+    .Connectivite__section2__content__subdescription {
         font-size: 1rem;
     }
     
@@ -434,11 +434,11 @@ nav.HEADER {
 
     /* Section 1 */
 
-    .Connectivité__section1__visual {
+    .Connectivite__section1__visual {
         height: 50vh;
     }
 
-    .Connectivité__section1__content__description {
+    .Connectivite__section1__content__description {
         font-size: 2rem;
     }
 
@@ -470,17 +470,17 @@ nav.HEADER {
 
     /* SECTION 2 Configuration */
 
-    .Connectivité__section2 {
+    .Connectivite__section2 {
         padding: 0rem 3rem;
         height: auto;
     }
     
-    .Connectivité__section2__content__description {
+    .Connectivite__section2__content__description {
         font-size: 1rem;
     }
     
     
-    .Connectivité__section2__content__subdescription {
+    .Connectivite__section2__content__subdescription {
         font-size: 0.8rem;
     }
     
