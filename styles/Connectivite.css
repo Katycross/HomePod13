@@ -289,43 +289,6 @@ nav.HEADER {
     width: 100%;
 }
 
-/* SECTION 2 CONFIGURATION */
-
-.Connectivite__section2 {
-    display: flex;
-    justify-content: center;
-    height: 85vh;
-}
-
-.Connectivite__block2__visual {
-    width: 30%;
-}
-
-.Connectivite__section2__visual {
-    background: url('../images/Connectivite/connectivity.gif') center / contain no-repeat;
-}
-
-.Connectivite__section2__content {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 7rem;
-}
-
-.Connectivite__section2__content__description {
-    font-size: 3rem;
-    display: block;
-    justify-content: center;
-}
-
-
-.Connectivite__section2__content__subdescription {
-    font-size: 1.5rem;
-}
-
-
-
 
 /* FOOTER LINK FIONCTIONAL */
 
