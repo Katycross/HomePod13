@@ -1,0 +1,980 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Text';
+  font-size: 62.5%;
+}
+
+/*POLICES */
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('SFCompactDisplay-Light.woff2') format('woff2'),
+    url('SFCompactDisplay-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+/* HEADER FIX */
+
+
+
+nav.HEADER {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  background: #23222A;
+  font-size: 0.9rem;
+}
+
+.menu_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu_container ul li {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  margin: 0rem 1.8rem;
+}
+
+.menu_container ul li a {
+  display: inline;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.menu_container ul li a:hover {
+  color: #969696;
+}
+
+.apple_icon a img {
+  max-width: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+ul.menu_responsive {
+  display: none;
+}
+
+#menuToggle {
+  display: none;
+}
+
+
+.Acheter {
+  background-color: #1592E6;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #07c;
+  padding: 0.15rem 0.8rem 0.15rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+
+  .menu_container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+
+  ul.menu_responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  ul.menu_responsive li a {
+    font-size: 1.5rem;
+  }
+
+  a {
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 30%;
+    margin: 15px 0 0 -50px;
+    padding: 18px 50px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+  }
+
+  #menuToggle input:checked~ul {
+    transform: none;
+  }
+
+  #menuToggle {
+    margin-top: 7px;
+    display: block;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    user-select: none;
+  }
+
+  ul#menu li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_container ul li {
+    margin: 0;
+  }
+
+  .menu_container ul li:first-child {
+    margin-left: 0;
+  }
+}
+
+/* GENERAL STYLE ALL PAGE */
+
+.Block {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* HOME PAGE */
+
+/* MAIN BLOCK  */
+
+.Main {
+  height: 95vh;
+}
+
+
+.Block__visual {
+  height: auto;
+  width: 35rem;
+}
+
+
+.Block__content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+
+}
+
+
+.Main__visual {
+  background: url('../images/HomePodFace.png') -18vw center / 45vw no-repeat;
+}
+
+.Main__content__title {
+  font-weight: 500;
+  margin-left: -0.1rem !important;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.Main__content__subtitle {
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* SLIDER  */
+
+.Main__content__slider {
+  display: flex;
+  overflow: auto;
+}
+
+.Main__content__slider__item {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: transform 1s linear;
+}
+
+.slider__picture {
+  width: 100%;
+}
+
+/* SECTION 1 DEF */
+
+.Section1 {
+  margin: 0rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  background: url('../images/Accueil/gradient.jpeg') center left/ cover no-repeat;
+}
+
+.Section1__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Section1__content__title {
+  font-weight: bolder;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 0rem;
+}
+
+.Section1__content__description {
+  max-width: 65vw;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0rem;
+  line-height: 2.5rem;
+}
+
+
+/* Misection */
+
+.Misection__contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.Misection {
+  padding: 12rem;
+  margin-right: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url('../images/Accueil/char4.jpg') center / cover no-repeat;
+}
+
+
+.Misection__content__description {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0rem;
+}
+
+.Misection__content__description__link {
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Misection 2 */
+
+.Misection2 {
+  padding: 12rem;
+  margin-left: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background: url('../images/Accueil/char5.jpg') center / cover no-repeat;
+}
+
+
+
+/* SECTION 2 APPLE MUSIC */
+
+.Section2 {
+  display: flex;
+  height: 100vh;
+}
+
+.Block1__visual {
+  width: 120vh;
+}
+
+.Section2__visual {
+  background: url('../images/Accueil/music.png') center right/ contain no-repeat;
+}
+
+.Section2__content {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8rem;
+}
+
+.Section2__content__description {
+  font-size: 2.5rem;
+  display: block;
+  justify-content: center;
+}
+
+.Section2__content__title {
+  font-size: 3rem;
+  display: block;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+
+.Section2__content__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+/* SECTION 3 */
+
+.Section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 33rem;
+  background: url('../images/Accueil/char2.jpg') center / cover no-repeat;
+}
+
+.Section3__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.Section3__content__description {
+  color: white;
+  font-size: 4rem;
+  margin-top: 0rem;
+}
+
+.Section3__content__description__link {
+  color: white;
+  font-size: 24px;
+}
+
+/* SECTION 4 */
+
+
+.Section4 {
+  height: 90vh;
+}
+
+.Block4__visual {
+  width: 220vh;
+}
+
+.Section4__visual {
+  background: url('../images/Accueil/appletv.jpg') 2vh center / contain no-repeat;
+}
+
+.Section4__content {
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8rem;
+}
+
+.Section4__content__title {
+  font-size: 3rem;
+  display: block;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+
+.Section4__content__description {
+  font-size: 2.5rem;
+  display: block;
+  justify-content: center;
+}
+
+
+.Section4__content__description__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* SECTION 5 */
+
+.Section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 33rem;
+  background: url('../images/Accueil/char3.jpg') center / cover no-repeat;
+}
+
+.Section5__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Section5__content__description {
+  color: white;
+  font-size: 4rem;
+  margin-top: 0rem;
+}
+
+.Section5__content__description__link {
+  color: white;
+  font-size: 24px;
+}
+
+
+/* FOOTER LINK FIONCTIONAL */
+
+@media (min-width: 900px) {
+  .contain {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .footer {
+    background-color: #F5F5F5;
+  }
+
+  .footer .list {
+    width: 12rem;
+    padding: 1.5rem;
+  }
+
+  .footer .list h1 {
+    font-size: 1rem;
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    color: #000000;
+  }
+
+  .footer .list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .list ul li {
+    font-size: 0.8rem;
+    padding: 0.1rem 0rem 0.1rem 0rem;
+
+  }
+
+  .footer .list ul li a {
+    text-decoration: none;
+    color: #696969;
+  }
+
+}
+
+/*FOOTER RESPONSIVE */
+
+@media (min-width:0px) and (max-width: 899px) {
+
+  .footer .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .footer .contain {
+    padding-left: 2rem;
+    list-style: none;
+    background-color: #F5F5F5;
+  }
+
+  .footer .list {
+    margin: 0;
+  }
+
+  .footer .list h1 {
+    font-size: 0.7rem;
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    color: #000000;
+    position: relative;
+  }
+
+  .footer .list h1::after {
+    content: "<";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 0.7rem;
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    color: #000000;
+    transform: rotate(0deg);
+    transition: all linear 0.25s;
+  }
+
+  .footer .list .answer {
+    display: none;
+  }
+
+  .footer .list.is-open .answer {
+    display: block;
+  }
+
+  .footer .list.is-open h1::after {
+    transform: rotate(-90deg);
+  }
+
+  .footer .list.is-open .answer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .list.is-open .answer li {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    padding: 0.1rem 0rem 0.1rem 0rem;
+
+  }
+
+
+  .footer .list.is-open .answer li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #696969;
+  }
+
+
+}
+
+}
+
+/* CONNECTIVITÉ */
+
+/* SECTION 1 */
+
+.Connectivité__section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Connectivité__block1__visual {
+  width: 100%;
+  height: 100%;
+}
+
+.Connectivité__section1__visual {
+  height: 150vh;
+  background: url('../images/Connectivité/connect2.jpg') center top / cover no-repeat;
+}
+
+.Connectivité__section1__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.Connectivité__section1__content__description {
+  font-size: 4.5rem;
+  display: block;
+  justify-content: center;
+}
+
+.Connectivité__section1__content__description__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.Connectivité__section1__content__subdescription {
+  font-size: 1.5rem;
+}
+
+/* BANNER 1 */
+
+.Banner1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60rem;
+  background: url('../images/Connectivité/gradient.png') center / cover no-repeat;
+}
+
+.Banner1__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Banner1__content__big__description {
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  font-size: 5.5em;
+  margin-top: 0rem;
+}
+
+.Banner1__content__description {
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  margin-top: 0rem;
+}
+
+.Solo__text2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+
+/* SECTION 2 */
+
+.Connectivité__section2 {
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+}
+
+.Connectivité__block2__visual {
+  width: 30%;
+}
+
+.Connectivité__section2__visual {
+  background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
+}
+
+.Connectivité__section2__content {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7rem;
+}
+
+.Connectivité__section2__content__description {
+  font-size: 3rem;
+  display: block;
+  justify-content: center;
+}
+
+.Connectivité__section2__content__description__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.Connectivité__section2__content__subdescription {
+  font-size: 1.2rem;
+}
+
+/* HOMEPOD DEVICE */
+
+.Device {
+  height: 15rem;
+}
+
+.Device img {
+  width: 100%;
+}
+
+/* SECTION 3 */
+
+.Connectivité__section2 {
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+}
+
+.Connectivité__block2__visual {
+  width: 30%;
+}
+
+.Connectivité__section2__visual {
+  background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
+}
+
+.Connectivité__section2__content {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7rem;
+}
+
+.Connectivité__section2__content__description {
+  font-size: 3rem;
+  display: block;
+  justify-content: center;
+}
+
+.Connectivité__section2__content__description__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.Connectivité__section2__content__subdescription {
+  font-size: 1.2rem;
+}
+
+/* IPAD IPHONE responsive HOME */
+
+@media (max-width: 1200px) {
+
+  /* Body */
+
+  .Main {
+    padding: 5rem 0;
+    height: auto;
+  }
+
+  /* MAIN */
+
+  .Main__content__title {
+    font-size: 2rem;
+  }
+
+  .Main__content__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .Block__visual {
+    height: 25rem;
+    width: 50rem;
+  }
+
+
+  .Main__visual {
+    background: url('../images/HomePodFace.png') center / contain no-repeat;
+  }
+
+  /* SLIDER */
+
+  .Main__content__slider {
+    display: none;
+  }
+
+  /* SECTION 1  */
+
+  .Section1__content__title {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .Section1__content__description {
+    max-width: 80vw;
+    font-size: 1.5rem;
+  }
+
+  /* bannier 1 */
+
+  .Section1 {
+    padding: 1rem 2rem;
+    height: auto;
+  }
+
+
+  .Section3 {
+    padding: 10rem 0;
+    height: auto;
+  }
+
+  /* SECTION 2 APPLE MUSIC  */
+
+  .Section2{
+    padding: 5rem 0rem;
+    height: auto;
+    display: flex;
+  }
+
+  .Section2__content{
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .Section2__content__title{
+    font-size: 2.5rem;
+  }
+  .Section2__content__description{
+    font-size: 2rem;
+  }
+}
+
+/* IPHONE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  /* Body */
+
+  .Main {
+    padding: 1rem 0;
+    height: auto;
+  }
+
+
+  /* MAIN */
+
+  .Main__content__title {
+    font-size: 1.5rem;
+  }
+
+  .Main__content__subtitle {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .Block__visual {
+    height: 15rem;
+    width: 28rem;
+  }
+
+
+  .Main__visual {
+    background: url('../images/HomePodFace.png') center / contain no-repeat;
+  }
+
+  /* SECTION 1  */
+
+  .Section1__content__title {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .Section1__content__description {
+    padding: 0rem 0rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+   /* SECTION 2 APPLE MUSIC  */
+
+   .Section2{
+    padding: 1rem 0rem;
+    height: auto;
+    display: flex;
+  }
+
+  .Section2_content{
+    width: 30%;
+  }
+
+  .Section2__content__title{
+    font-size: 1rem;
+  }
+  .Section2__content__description{
+    font-size: 1rem;
+  }
+
+  .Section2__content__link{
+    font-size: 0.5rem;
+  }
+
+  /* SECTION 5 APPLE MUSIC  */
+
+  .Section5{
+    height:10rem;
+  }
+
+  .Section5__content__description{
+    font-size:1rem;
+  }
+
+  .Section5__content__description__link{
+    font-size: 0.5rem;
+  }
+
+  /* SECTION 4 APPLE MUSIC  */
+
+  .Section4{
+    padding: 1rem 0rem;
+    height: auto;
+  }
+
+  .Section4__content{
+    padding-left: 2rem;
+  }
+
+  .Section4__content__title{
+    font-size: 1.5rem;
+  }
+
+  .Section4__content__description{
+    font-size: 1rem;
+  }
+
+  .Section4__content__description__link{
+    font-size: 0.5rem;
+  }
+
+  .Block4__visual{
+    width: 50vh;
+  }
+
+}
