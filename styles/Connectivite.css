@@ -245,7 +245,7 @@ nav.HEADER {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: url('../images/Connectivité/gradient.png') center / cover no-repeat;
+    background: url('../images/Connectivite/gradient.png') center / cover no-repeat;
 }
 
 .Banner1__content {
@@ -302,7 +302,7 @@ nav.HEADER {
 }
 
 .Connectivite__section2__visual {
-    background: url('../images/Connectivité/connectivity.gif') center / contain no-repeat;
+    background: url('../images/Connectivite/connectivity.gif') center / contain no-repeat;
 }
 
 .Connectivite__section2__content {
