@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'SF Pro Text';
+  font-family: 'SF Compact Display';
   font-size: 62.5%;
 }
 
@@ -309,7 +309,7 @@ ul.menu_responsive {
 }
 
 .Misection {
-  padding: 12rem;
+  padding: 12rem 0rem;
   margin-right: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ ul.menu_responsive {
 /* Misection 2 */
 
 .Misection2 {
-  padding: 12rem;
+  padding: 12rem 0rem;
   margin-left: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -913,6 +913,17 @@ ul.menu_responsive {
     line-height: 1.5rem;
   }
 
+   /* MISECTION */
+
+   .Misection{
+     padding: 1rem 0rem;
+   }
+
+   .Misection2{
+    padding: 1rem 0rem;
+  }
+
+  .Misect
    /* SECTION 2 APPLE MUSIC  */
 
    .Section2{
