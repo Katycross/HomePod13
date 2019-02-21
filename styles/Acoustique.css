@@ -16,9 +16,9 @@ body {
 }
 
 @font-face {
-  font-family: 'SF Compact Display Bold';
-  src: url('../fonts/SFCompactDisplay-Bold.woff2') format('woff2'),
-    url('../fonts/SFCompactDisplay-Bold.woff') format('woff');
+  font-family: 'SF Compact Display Regular';
+  src: url('../fonts/SFCompactDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFCompactDisplay-Regular.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
