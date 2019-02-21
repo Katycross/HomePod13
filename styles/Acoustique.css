@@ -9,11 +9,19 @@ body {
 
 @font-face {
   font-family: 'SF Compact Display';
-  src: url('SFCompactDisplay-Light.woff2') format('woff2'),
-      url('SFCompactDisplay-Light.woff') format('woff');
- 
+  src: url('../fonts/SFCompactDisplay-Light.woff2') format('woff2'),
+    url('../fonts/SFCompactDisplay-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'SF Compact Display Bold';
+  src: url('../fonts/SFCompactDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/SFCompactDisplay-Bold.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
 
 /* HEADER FIX */
 
@@ -414,6 +422,9 @@ ul.menu_responsive {
 
 }
 
+
+/* FOOTER LINK FIONCTIONAL */
+
 @media (min-width: 900px) {
   .contain {
     display: flex;
@@ -455,9 +466,12 @@ ul.menu_responsive {
 
 }
 
+
+
+
 /*FOOTER RESPONSIVE */
 
-@media (min-width:0px) and (max-width: 899px) {
+@media (max-width: 900px) {
 
   .footer .container {
     width: 900px;
@@ -532,4 +546,3 @@ ul.menu_responsive {
 
 
 }
-
