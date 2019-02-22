@@ -16,6 +16,14 @@ body {
 }
 
 @font-face {
+  font-family: 'SF Compact Display Medium';
+  src: url('../fonts/SFCompactDisplay-Medium.woff2') format('woff2'),
+      url('../fonts/SFCompactDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'SF Compact Display Regular';
   src: url('../fonts/SFCompactDisplay-Regular.woff2') format('woff2'),
     url('../fonts/SFCompactDisplay-Regular.woff') format('woff');
@@ -289,7 +297,7 @@ ul.menu_responsive {
 }
 
 .Section1__content__title {
-  font-family: 'SF Compact Display Regular'!important;
+  font-family: 'SF Compact Display Medium'!important;
   flex-direction: column;
   text-align: center;
   color: white;
