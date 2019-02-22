@@ -419,6 +419,48 @@ nav.HEADER {
 
 }
 
+/* SIRI */
+
+.Siri__question{
+  font-family: 'SF Compact Display Regular'!important;
+  padding-top: 4rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.6rem;
+  color: transparent;
+  background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+  background-size: 51% 100%;
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Siri__question__start{
+  padding-top: 9rem;
+  font-family: 'SF Compact Display Regular'!important;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.6rem;
+  color: transparent;
+  background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+  background-size: 51% 100%;
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Siri__answer{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.Siri__answer__end{
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 9rem;
+}
 
 /* IPAD IPHONE responsive CONNECTIVITY */
 
@@ -459,6 +501,23 @@ nav.HEADER {
 
     .Device {
         height: 12rem;
+    }
+
+    /* SIRI  */
+    .Siri__question{
+      font-size:2.5rem;
+      padding-top: 2.5rem;
+    }
+
+    .Siri__answer{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+    .Siri__answer__end{
+      text-align: center;
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
     }
     
 
@@ -520,5 +579,24 @@ nav.HEADER {
     .Connectivite__section2__content__subdescription {
         font-size: 0.8rem;
     }
+
+
+    /* SIRI  */
+    .Siri__question{
+      font-size:1.5rem;
+      padding-top: 2rem;
+    }
+
+    .Siri__answer{
+      text-align: center;
+      font-size: 1rem;
+    }
+    
+    .Siri__answer__end{
+      text-align: center;
+      font-size: 1rem;
+      padding-bottom: 2rem;
+    }
+    
     
 }
