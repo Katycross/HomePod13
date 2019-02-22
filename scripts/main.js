@@ -30,26 +30,3 @@ function moveAlbum (i) {
 }
 
 
-
-
-
-
-const list=document.querySelectorAll('.list')
-
-for (let i = 0; i < list.length; i++) {
-list[i].addEventListener(
-  'click',
-  function(){ //qd fait la fonctions fait les instructions suivantes
-    if (this.classList.contains('is-open')){
-      this.classList.remove('is-open')// element ou vous avais ms le is-open
-    }
-    else {
-      let temp = document.querySelector('.is-open') //regarde si autre class is-open
-      if (temp != null){ //different de null veut dire que il na ie trouvé qui est en is-open
-        temp.classList.remove('is-open')
-      }
-      this.classList.add('is-open') //ajouter la classlist is-open a faqItem[i] // this = l'elelement en cours sur lequel il y a l'evenement (faqItem[i])
-    }
-  }
-)
-}
