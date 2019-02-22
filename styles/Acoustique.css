@@ -546,3 +546,106 @@ ul.menu_responsive {
 
 
 }
+
+
+/* IPAD IPHONE responsive CONNECTIVITY */
+
+
+/* IPAD */
+
+@media (max-width: 900px) {
+
+    /* Section 1 */
+    .Connectivite__section1__visual {
+        height: 100vh;
+    }
+
+    .Connectivite__section1__content__description {
+        font-size: 3.5rem;
+    }
+
+    /* Banner 1 */
+
+    .Banner1__content__big__description {
+        font-size: 2.8rem;
+    }
+
+    .Banner1__content__description {
+        font-size: 1.5rem;
+    }
+
+    .Banner1 {
+        padding: 7rem 0;
+        height: auto;
+    }
+
+    /* HOMEPOD DEVICE */
+
+    .Solo__text2 {
+        font-size: 2rem;
+    }
+
+    .Device {
+        height: 12rem;
+    }
+    
+
+}
+
+/* IPHONE */
+
+@media (max-width: 600px) {
+
+    /* Section 1 */
+
+    .Connectivite__section1__visual {
+        height: 50vh;
+    }
+
+    .Connectivite__section1__content__description {
+        font-size: 2rem;
+    }
+
+    /* Banner 1 */
+
+    .Banner1__content__big__description {
+        font-size: 2rem;
+    }
+
+    .Banner1__content__description {
+        font-size: 1rem;
+    }
+
+    .Banner1 {
+        padding: 6rem 0;
+        height: auto;
+    }
+
+    /* HOMEPOD DEVICE */
+
+    .Solo__text2 {
+        font-size: 1.5rem;
+        padding: 0rem 0;
+    }
+
+    .Device {
+        height: 10rem;
+    }
+
+    /* SECTION 2 Configuration */
+
+    .Connectivite__section2 {
+        padding: 0rem 3rem;
+        height: auto;
+    }
+    
+    .Connectivite__section2__content__description {
+        font-size: 1rem;
+    }
+    
+    
+    .Connectivite__section2__content__subdescription {
+        font-size: 0.8rem;
+    }
+    
+}
