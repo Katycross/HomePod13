@@ -556,3 +556,49 @@ section_evenement .main_evenement .Interior{
   width: 30rem;
   height: auto;
 }
+
+/* AJUSTEMENT */
+
+
+/* SECTION 2 APPLE MUSIC */
+
+.Interior__homepod {
+  display: flex;
+  height: 100vh;
+}
+
+.Block__interior__visual {
+  width: 120vh;
+}
+
+.Interior__homepod__visual {
+  background: url('../images/Accueil/music.png') center right/ contain no-repeat;
+}
+
+.Interior__homepod__content {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8rem;
+}
+
+.Interior__homepod__content__description {
+  font-size: 2.5rem;
+  display: block;
+  justify-content: center;
+}
+
+.Interior__homepod__content__title {
+  font-size: 3rem;
+  display: block;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+
+.Interior__homepod__content__link {
+  color: #008EE6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+

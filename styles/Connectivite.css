@@ -518,6 +518,12 @@ ul.menu_responsive {
     padding-top: 2.5rem;
   }
 
+  .Siri__question__start {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
+
+
   .Siri__answer {
     text-align: center;
     font-size: 1.5rem;
@@ -591,6 +597,11 @@ ul.menu_responsive {
 
 
   /* SIRI  */
+
+  .Siri__question__start{
+    font-size:1.5rem;
+  }
+
   .Siri__question {
     font-size: 1.5rem;
     padding-top: 2rem;
